@@ -1,0 +1,952 @@
+﻿WEBVTT
+
+00:00:03.780 --> 00:00:06.780
+foreign
+
+00:00:08.780 --> 00:00:11.099
+I'll share with you the skills that you
+
+00:00:11.099 --> 00:00:13.259
+need to have to become a back-end python
+
+00:00:13.259 --> 00:00:15.240
+developer I'm taking these skills from
+
+00:00:15.240 --> 00:00:16.980
+my knowledge as well as doing some
+
+00:00:16.980 --> 00:00:18.779
+research and looking at some recent job
+
+00:00:18.779 --> 00:00:21.720
+postings relating to python positions so
+
+00:00:21.720 --> 00:00:23.580
+that said let's get into the video after
+
+00:00:23.580 --> 00:00:26.220
+a quick word from our sponsor before we
+
+00:00:26.220 --> 00:00:27.960
+get started I need to thank lenode for
+
+00:00:27.960 --> 00:00:30.359
+sponsoring this video I've been using
+
+00:00:30.359 --> 00:00:32.098
+and working with lenode for nearly three
+
+00:00:32.098 --> 00:00:33.840
+years now and they've consistently been
+
+00:00:33.840 --> 00:00:35.520
+my go-to choice for hosting my
+
+00:00:35.520 --> 00:00:38.100
+applications and servers in fact right
+
+00:00:38.100 --> 00:00:39.540
+now I'm using the node to host the
+
+00:00:39.540 --> 00:00:41.760
+official Tech with Tim Discord bot a
+
+00:00:41.760 --> 00:00:43.920
+website multiple of my domains and a
+
+00:00:43.920 --> 00:00:46.200
+kubernetes cluster now lenode was just
+
+00:00:46.200 --> 00:00:48.239
+recently acquired by Akamai and as a
+
+00:00:48.239 --> 00:00:49.680
+part of this acquisition they're going
+
+00:00:49.680 --> 00:00:51.480
+to be adding more than a dozen new data
+
+00:00:51.480 --> 00:00:53.280
+centers around the world in the next
+
+00:00:53.280 --> 00:00:55.320
+year lenode makes it super easy to spin
+
+00:00:55.320 --> 00:00:56.940
+up servers with their one-click app
+
+00:00:56.940 --> 00:00:58.739
+Marketplace and have tons of written
+
+00:00:58.739 --> 00:01:00.420
+guides and YouTube videos on their
+
+00:01:00.420 --> 00:01:02.579
+channel to help you get started now if
+
+00:01:02.579 --> 00:01:03.960
+you're having any issues you can reach
+
+00:01:03.960 --> 00:01:06.240
+out to the 24 7 support team and
+
+00:01:06.240 --> 00:01:08.220
+actually talk with a real human being
+
+00:01:08.220 --> 00:01:10.439
+now the node's pricing is simple with no
+
+00:01:10.439 --> 00:01:12.600
+hidden fees and full transparency and
+
+00:01:12.600 --> 00:01:14.400
+you can test out the node services for
+
+00:01:14.400 --> 00:01:15.960
+free by using the link in the
+
+00:01:15.960 --> 00:01:17.580
+description and claiming in a hundred
+
+00:01:17.580 --> 00:01:19.560
+dollar sixty day credit for any new
+
+00:01:19.560 --> 00:01:21.420
+accounts it's been an absolute pleasure
+
+00:01:21.420 --> 00:01:23.040
+to work with lenode over the past few
+
+00:01:23.040 --> 00:01:25.020
+years and one last thank you to them for
+
+00:01:25.020 --> 00:01:27.119
+sponsoring this video alright so let's
+
+00:01:27.119 --> 00:01:29.640
+go ahead and dive in now I quickly want
+
+00:01:29.640 --> 00:01:31.080
+to mention if you haven't already heard
+
+00:01:31.080 --> 00:01:32.939
+I just released a brand new course it's
+
+00:01:32.939 --> 00:01:34.740
+called blockchain expert if you're
+
+00:01:34.740 --> 00:01:36.720
+looking to get into web 3 learn about
+
+00:01:36.720 --> 00:01:39.119
+blockchain Technology's solidity web3
+
+00:01:39.119 --> 00:01:41.460
+fundamentals Etc then check it out from
+
+00:01:41.460 --> 00:01:42.840
+the link in the description I know you
+
+00:01:42.840 --> 00:01:44.640
+guys will find some value but that said
+
+00:01:44.640 --> 00:01:48.500
+though let's get into the skills
+
+00:01:48.600 --> 00:01:50.880
+now obviously you can land a python
+
+00:01:50.880 --> 00:01:52.500
+developer position without having
+
+00:01:52.500 --> 00:01:54.600
+everything on this list but I think if
+
+00:01:54.600 --> 00:01:56.579
+you want it to be considered for kind of
+
+00:01:56.579 --> 00:01:58.560
+a like let's say mid-level or maybe even
+
+00:01:58.560 --> 00:02:00.420
+a higher level position you would need
+
+00:02:00.420 --> 00:02:02.399
+to have everything here that said I'm
+
+00:02:02.399 --> 00:02:03.720
+sure you could join as kind of a junior
+
+00:02:03.720 --> 00:02:05.759
+python developer or a junior back-end
+
+00:02:05.759 --> 00:02:07.799
+developer and work your way up and learn
+
+00:02:07.799 --> 00:02:09.360
+some of the missing skills if you didn't
+
+00:02:09.360 --> 00:02:10.919
+have all of so the first thing you're
+
+00:02:10.919 --> 00:02:12.060
+going to have to have here pretty
+
+00:02:12.060 --> 00:02:14.459
+obvious is python skills you need to
+
+00:02:14.459 --> 00:02:16.739
+understand python fundamentals I don't
+
+00:02:16.739 --> 00:02:18.780
+think you need to be an expert in Python
+
+00:02:18.780 --> 00:02:19.860
+you don't have to know everything about
+
+00:02:19.860 --> 00:02:23.160
+like generators uh iterators uh meta
+
+00:02:23.160 --> 00:02:24.840
+classes all of that kind of advanced
+
+00:02:24.840 --> 00:02:27.300
+syntax but I would know for Loops
+
+00:02:27.300 --> 00:02:29.819
+functions classes objects and a lot of
+
+00:02:29.819 --> 00:02:32.040
+the common and core syntax and
+
+00:02:32.040 --> 00:02:33.900
+functionality that you'd use on an
+
+00:02:33.900 --> 00:02:36.680
+everyday basis
+
+00:02:37.140 --> 00:02:39.239
+okay so moving on to the second skill
+
+00:02:39.239 --> 00:02:40.800
+you would need to have to become a
+
+00:02:40.800 --> 00:02:42.840
+back-end python developer this may seem
+
+00:02:42.840 --> 00:02:44.459
+a little counter-intuitive but this is
+
+00:02:44.459 --> 00:02:47.040
+some basic front-end skills now whenever
+
+00:02:47.040 --> 00:02:48.360
+you're working on the back end you're
+
+00:02:48.360 --> 00:02:49.860
+still going to be touching aspects of
+
+00:02:49.860 --> 00:02:51.360
+the front end even if you're not writing
+
+00:02:51.360 --> 00:02:52.560
+front end code you might have to
+
+00:02:52.560 --> 00:02:54.840
+understand it digest it kind of look at
+
+00:02:54.840 --> 00:02:57.000
+it and read it and for that reason you
+
+00:02:57.000 --> 00:02:59.760
+should understand some basic HTML basic
+
+00:02:59.760 --> 00:03:01.739
+CSS you should understand maybe a little
+
+00:03:01.739 --> 00:03:03.780
+bit of JavaScript again you don't need
+
+00:03:03.780 --> 00:03:05.819
+to be an expert or a master in this but
+
+00:03:05.819 --> 00:03:07.920
+you need to have some fluency and the
+
+00:03:07.920 --> 00:03:09.840
+ability to at least read some of that
+
+00:03:09.840 --> 00:03:11.640
+code so I would spend a bit of time
+
+00:03:11.640 --> 00:03:13.200
+maybe a week or two kind of looking into
+
+00:03:13.200 --> 00:03:14.760
+some of those skills learning how to
+
+00:03:14.760 --> 00:03:16.500
+build some basic front ends maybe you
+
+00:03:16.500 --> 00:03:17.940
+want to dabble in something like react
+
+00:03:17.940 --> 00:03:19.980
+view angular some other popular
+
+00:03:19.980 --> 00:03:22.080
+Frameworks that's up to you but I would
+
+00:03:22.080 --> 00:03:25.879
+know some basic front-end skills
+
+00:03:26.640 --> 00:03:28.680
+now beyond that knowledge the next thing
+
+00:03:28.680 --> 00:03:30.480
+that you would need to know to become a
+
+00:03:30.480 --> 00:03:32.940
+back-end python developer is some basic
+
+00:03:32.940 --> 00:03:35.040
+networking skills now I think you could
+
+00:03:35.040 --> 00:03:36.840
+probably get away without having this
+
+00:03:36.840 --> 00:03:38.940
+but I would highly recommend spending a
+
+00:03:38.940 --> 00:03:41.340
+few days learning about basic networking
+
+00:03:41.340 --> 00:03:43.980
+so learning about HTTP what is that
+
+00:03:43.980 --> 00:03:45.599
+protocol how does that work how do you
+
+00:03:45.599 --> 00:03:48.060
+serve data over the web learning about
+
+00:03:48.060 --> 00:03:50.459
+IP addresses learning about say
+
+00:03:50.459 --> 00:03:53.220
+firewalls learning about vpns and just
+
+00:03:53.220 --> 00:03:55.260
+again kind of fundamental things related
+
+00:03:55.260 --> 00:03:57.000
+to networking maybe you want to learn
+
+00:03:57.000 --> 00:03:59.400
+why localhost works the way it does
+
+00:03:59.400 --> 00:04:01.799
+about different ports about you know
+
+00:04:01.799 --> 00:04:03.360
+kind of standard ports you'd have for a
+
+00:04:03.360 --> 00:04:05.159
+website versus ports for other services
+
+00:04:05.159 --> 00:04:07.799
+again just some fundamental knowledge in
+
+00:04:07.799 --> 00:04:09.959
+this area I think will go a long way so
+
+00:04:09.959 --> 00:04:13.260
+I would learn about basic Networks
+
+00:04:13.260 --> 00:04:15.480
+now moving beyond networking the next
+
+00:04:15.480 --> 00:04:17.639
+thing I would learn is related to Linux
+
+00:04:17.639 --> 00:04:19.139
+and also I'll clarify here I wouldn't
+
+00:04:19.139 --> 00:04:20.459
+learn these necessarily in any
+
+00:04:20.459 --> 00:04:22.320
+particular order I think the order I
+
+00:04:22.320 --> 00:04:23.940
+have is actually decent but just
+
+00:04:23.940 --> 00:04:24.960
+throwing it out there you can kind of
+
+00:04:24.960 --> 00:04:26.759
+learn this in any order so let me take
+
+00:04:26.759 --> 00:04:28.380
+that back the next thing just something
+
+00:04:28.380 --> 00:04:31.259
+I would learn would be Linux now you
+
+00:04:31.259 --> 00:04:33.419
+want to learn about how to operate in a
+
+00:04:33.419 --> 00:04:35.100
+Linux environment so what different
+
+00:04:35.100 --> 00:04:37.620
+Linux users are Linux permissions Linux
+
+00:04:37.620 --> 00:04:39.600
+commands how do you copy paste move
+
+00:04:39.600 --> 00:04:41.460
+files around you want to be comfortable
+
+00:04:41.460 --> 00:04:43.500
+working on just strictly the command
+
+00:04:43.500 --> 00:04:45.900
+line and not relying on a graphical user
+
+00:04:45.900 --> 00:04:47.699
+interface now I actually have an entire
+
+00:04:47.699 --> 00:04:49.860
+Linux tutorial series that's designed
+
+00:04:49.860 --> 00:04:52.500
+specifically for programmers looking to
+
+00:04:52.500 --> 00:04:54.240
+kind of learn this basic knowledge so
+
+00:04:54.240 --> 00:04:55.500
+I'll link that in the description in
+
+00:04:55.500 --> 00:04:57.060
+case you're curious it is completely
+
+00:04:57.060 --> 00:04:58.919
+free
+
+00:04:58.919 --> 00:04:59.940
+right
+
+00:04:59.940 --> 00:05:02.040
+so next after learning Linux I would
+
+00:05:02.040 --> 00:05:04.380
+start learning Django and flask which
+
+00:05:04.380 --> 00:05:06.780
+are web Frameworks that utilize now
+
+00:05:06.780 --> 00:05:08.280
+these are great to learn regardless if
+
+00:05:08.280 --> 00:05:09.419
+you want to be a python backend
+
+00:05:09.419 --> 00:05:10.919
+developer but I think if you want to be
+
+00:05:10.919 --> 00:05:12.240
+a backend developer you're going to have
+
+00:05:12.240 --> 00:05:13.919
+to be competent with these Frameworks
+
+00:05:13.919 --> 00:05:16.199
+and learn more than just the basics you
+
+00:05:16.199 --> 00:05:17.580
+want to learn kind of the intermediate
+
+00:05:17.580 --> 00:05:19.560
+and advanced topics within this and be
+
+00:05:19.560 --> 00:05:21.780
+very comfortable writing code in Django
+
+00:05:21.780 --> 00:05:25.259
+and flask now flask is the more basic of
+
+00:05:25.259 --> 00:05:26.880
+these two Frameworks so I would start by
+
+00:05:26.880 --> 00:05:29.039
+learning that understand how to create a
+
+00:05:29.039 --> 00:05:30.600
+website with it how to create an API
+
+00:05:30.600 --> 00:05:31.880
+with it how to do security
+
+00:05:31.880 --> 00:05:34.199
+authentication logging in logging out
+
+00:05:34.199 --> 00:05:36.120
+you may even want to look at websockets
+
+00:05:36.120 --> 00:05:38.039
+using flask that could be a cool project
+
+00:05:38.039 --> 00:05:40.139
+next though you want to get into Django
+
+00:05:40.139 --> 00:05:42.120
+now Django is a lot more complicated it
+
+00:05:42.120 --> 00:05:44.160
+has many more tools and features but
+
+00:05:44.160 --> 00:05:45.720
+it's used by large companies like
+
+00:05:45.720 --> 00:05:48.780
+Instagram Spotify Mozilla National
+
+00:05:48.780 --> 00:05:51.180
+Geographic and a bunch of other ones as
+
+00:05:51.180 --> 00:05:53.280
+well so just learning Django will open
+
+00:05:53.280 --> 00:05:55.500
+you up to a lot of job opportunities but
+
+00:05:55.500 --> 00:05:56.580
+again you want to be learning about
+
+00:05:56.580 --> 00:05:58.800
+authentication page routing how to do
+
+00:05:58.800 --> 00:06:01.440
+apis more Advanced features Django
+
+00:06:01.440 --> 00:06:04.139
+extensions databases specifically
+
+00:06:04.139 --> 00:06:05.880
+databases and learning the kind of
+
+00:06:05.880 --> 00:06:08.100
+database model within Django that's a
+
+00:06:08.100 --> 00:06:09.539
+bit complicated but something you
+
+00:06:09.539 --> 00:06:11.220
+definitely need to learn if you want to
+
+00:06:11.220 --> 00:06:14.360
+be a back-end python developer
+
+00:06:14.360 --> 00:06:17.220
+now Beyond Django the next thing that I
+
+00:06:17.220 --> 00:06:19.620
+would start looking into is API design
+
+00:06:19.620 --> 00:06:21.960
+and just apis in general learning about
+
+00:06:21.960 --> 00:06:23.280
+kind of how those work the different
+
+00:06:23.280 --> 00:06:25.800
+routes you can set up crud apis more
+
+00:06:25.800 --> 00:06:29.039
+complex apis and specifically related to
+
+00:06:29.039 --> 00:06:30.660
+kind of permissions and authentications
+
+00:06:30.660 --> 00:06:32.580
+around that personally I always find
+
+00:06:32.580 --> 00:06:34.139
+that the most complicated stuff is doing
+
+00:06:34.139 --> 00:06:36.180
+authentication specifically token
+
+00:06:36.180 --> 00:06:38.220
+authentication or other aspects of
+
+00:06:38.220 --> 00:06:39.720
+authentication where you have a refresh
+
+00:06:39.720 --> 00:06:41.880
+token an expiry date you have maybe
+
+00:06:41.880 --> 00:06:43.680
+username password authentication there's
+
+00:06:43.680 --> 00:06:45.060
+a lot of different ways to do this and
+
+00:06:45.060 --> 00:06:46.500
+it's going to change depending on the
+
+00:06:46.500 --> 00:06:48.240
+framework that you're using so I would
+
+00:06:48.240 --> 00:06:50.100
+be really really comfortable creating
+
+00:06:50.100 --> 00:06:52.740
+apis designing apis working with
+
+00:06:52.740 --> 00:06:54.419
+Frameworks like Django and flask maybe
+
+00:06:54.419 --> 00:06:56.759
+even fast API and just be comfortable
+
+00:06:56.759 --> 00:06:58.560
+doing this almost know how to do it kind
+
+00:06:58.560 --> 00:07:00.479
+of off the top of your head to spin up a
+
+00:07:00.479 --> 00:07:02.639
+quick API add some authorization or
+
+00:07:02.639 --> 00:07:04.919
+authentication understand what JWT
+
+00:07:04.919 --> 00:07:06.660
+tokens are and all the other stuff that
+
+00:07:06.660 --> 00:07:08.639
+you're going to be using frequently if
+
+00:07:08.639 --> 00:07:10.380
+you're a back-end developer now beyond
+
+00:07:10.380 --> 00:07:11.520
+that I would also look at stuff like
+
+00:07:11.520 --> 00:07:13.860
+rate limiting how you host your apis how
+
+00:07:13.860 --> 00:07:15.600
+you make make sure your apis are secure
+
+00:07:15.600 --> 00:07:17.340
+and not being hit by too many people
+
+00:07:17.340 --> 00:07:19.560
+there's all kinds of stuff to look at in
+
+00:07:19.560 --> 00:07:21.840
+this and I'm no expert in this field but
+
+00:07:21.840 --> 00:07:23.099
+those are some of the things I would
+
+00:07:23.099 --> 00:07:25.199
+start really kind of researching if I
+
+00:07:25.199 --> 00:07:26.819
+was thinking about becoming a more
+
+00:07:26.819 --> 00:07:30.440
+full-time python back-end development
+
+00:07:30.440 --> 00:07:33.120
+so next we move on to probably my least
+
+00:07:33.120 --> 00:07:36.479
+favorite topic but this is databases now
+
+00:07:36.479 --> 00:07:37.919
+the reality is if you want to be a
+
+00:07:37.919 --> 00:07:39.900
+back-end developer of any kind you have
+
+00:07:39.900 --> 00:07:42.120
+to understand databases this is a very
+
+00:07:42.120 --> 00:07:44.280
+very important part of your job and you
+
+00:07:44.280 --> 00:07:45.660
+need to know how to create databases
+
+00:07:45.660 --> 00:07:47.940
+delete them migrate them do maintenance
+
+00:07:47.940 --> 00:07:50.160
+on them add new tables add relationships
+
+00:07:50.160 --> 00:07:53.099
+do database design how to host databases
+
+00:07:53.099 --> 00:07:55.139
+how to protect and secure your databases
+
+00:07:55.139 --> 00:07:57.300
+there is so much stuff relating to data
+
+00:07:57.300 --> 00:07:59.280
+how to back up your databases how to
+
+00:07:59.280 --> 00:08:00.840
+part put part of your database in
+
+00:08:00.840 --> 00:08:02.220
+another database and access it from
+
+00:08:02.220 --> 00:08:04.139
+somewhere else there is so much stuff
+
+00:08:04.139 --> 00:08:06.000
+related to this and that's going to come
+
+00:08:06.000 --> 00:08:07.919
+with learning SQL now there's a lot of
+
+00:08:07.919 --> 00:08:09.720
+companies now that are using nosql
+
+00:08:09.720 --> 00:08:11.580
+databases for example my startup
+
+00:08:11.580 --> 00:08:14.280
+velocity uses a nosql database which is
+
+00:08:14.280 --> 00:08:16.259
+Firebase however
+
+00:08:16.259 --> 00:08:17.819
+um you know it's probably a good idea to
+
+00:08:17.819 --> 00:08:20.400
+understand SQL and I myself took I think
+
+00:08:20.400 --> 00:08:22.860
+two SQL courses in University sorry for
+
+00:08:22.860 --> 00:08:24.360
+the cut there you can see my cap behind
+
+00:08:24.360 --> 00:08:26.039
+me was about to be stopping my recording
+
+00:08:26.039 --> 00:08:27.780
+so I had to step in there and fix that
+
+00:08:27.780 --> 00:08:29.460
+but as I was saying you need to learn
+
+00:08:29.460 --> 00:08:31.440
+SQL you need to understand how to
+
+00:08:31.440 --> 00:08:33.360
+structure databases create them query
+
+00:08:33.360 --> 00:08:35.458
+them run SQL commands and I would also
+
+00:08:35.458 --> 00:08:38.039
+be familiar with nosql databases and
+
+00:08:38.039 --> 00:08:39.419
+understand a little bit about how to
+
+00:08:39.419 --> 00:08:41.520
+structure your data in a nosql database
+
+00:08:41.520 --> 00:08:42.958
+because that's different than working
+
+00:08:42.958 --> 00:08:45.360
+with a SQL database with a nosql
+
+00:08:45.360 --> 00:08:47.399
+database you're fairly Limited in terms
+
+00:08:47.399 --> 00:08:49.440
+of query operations due to the limited
+
+00:08:49.440 --> 00:08:51.720
+structure that's imposed so the way you
+
+00:08:51.720 --> 00:08:53.040
+structure your data is much different
+
+00:08:53.040 --> 00:08:55.440
+and you end up having a lot of redundant
+
+00:08:55.440 --> 00:08:57.720
+data that's actually kind of part of the
+
+00:08:57.720 --> 00:08:59.940
+design process of working with a nosql
+
+00:08:59.940 --> 00:09:02.339
+database anyways look into that you're
+
+00:09:02.339 --> 00:09:04.019
+going to have to understand SQL I would
+
+00:09:04.019 --> 00:09:05.459
+kind of focus there and then maybe just
+
+00:09:05.459 --> 00:09:07.320
+learn a bit about nosql to kind of have
+
+00:09:07.320 --> 00:09:09.120
+some experience with that in case a job
+
+00:09:09.120 --> 00:09:11.839
+required
+
+00:09:11.880 --> 00:09:13.920
+so last thing on my list here is
+
+00:09:13.920 --> 00:09:15.540
+something that really should be its own
+
+00:09:15.540 --> 00:09:17.399
+job and with a lot of companies it is
+
+00:09:17.399 --> 00:09:18.959
+however if you're working maybe for a
+
+00:09:18.959 --> 00:09:20.279
+smaller company or I don't know some
+
+00:09:20.279 --> 00:09:22.200
+companies just require this you have to
+
+00:09:22.200 --> 00:09:25.080
+have devops skills now this really means
+
+00:09:25.080 --> 00:09:26.580
+your experience working with the cloud
+
+00:09:26.580 --> 00:09:29.459
+you understand how to deploy how to host
+
+00:09:29.459 --> 00:09:31.500
+specific things how to go in there and
+
+00:09:31.500 --> 00:09:32.700
+maybe change something do some
+
+00:09:32.700 --> 00:09:34.080
+maintenance uh you should have
+
+00:09:34.080 --> 00:09:35.279
+experience working in a cloud
+
+00:09:35.279 --> 00:09:38.700
+environment like AWS Azure Google Cloud
+
+00:09:38.700 --> 00:09:41.160
+whatever it is this company uses usually
+
+00:09:41.160 --> 00:09:43.440
+they require some experience in that
+
+00:09:43.440 --> 00:09:45.959
+specific environment now again I really
+
+00:09:45.959 --> 00:09:48.000
+feel like this is its own job there is
+
+00:09:48.000 --> 00:09:50.160
+so much stuff to learn related to devops
+
+00:09:50.160 --> 00:09:51.660
+and I mean this could be a whole video
+
+00:09:51.660 --> 00:09:53.339
+on its own how to be a devops engineer
+
+00:09:53.339 --> 00:09:54.959
+which I'm not even really qualified to
+
+00:09:54.959 --> 00:09:57.360
+talk about the reality is that a lot of
+
+00:09:57.360 --> 00:09:58.620
+companies are requiring this right so I
+
+00:09:58.620 --> 00:10:00.240
+think having a little bit of experience
+
+00:10:00.240 --> 00:10:01.860
+with this being able to not look like
+
+00:10:01.860 --> 00:10:03.899
+you don't have any experience is
+
+00:10:03.899 --> 00:10:05.339
+probably what you're going for in this
+
+00:10:05.339 --> 00:10:07.380
+category so yeah learn a little bit of
+
+00:10:07.380 --> 00:10:10.080
+devops now I will lastly mention you
+
+00:10:10.080 --> 00:10:11.399
+also of course want to learn Git Version
+
+00:10:11.399 --> 00:10:12.899
+Control GitHub I think that goes without
+
+00:10:12.899 --> 00:10:14.580
+saying so I didn't really mention it too
+
+00:10:14.580 --> 00:10:16.500
+explicitly but I would definitely learn
+
+00:10:16.500 --> 00:10:18.000
+that and that's pretty much a
+
+00:10:18.000 --> 00:10:20.580
+requirement for any programming job so
+
+00:10:20.580 --> 00:10:21.540
+that's it guys I'm going to start
+
+00:10:21.540 --> 00:10:23.160
+wrapping it up here make sure to check
+
+00:10:23.160 --> 00:10:24.779
+out blockchain expert from the link in
+
+00:10:24.779 --> 00:10:26.220
+the description if you're interested in
+
+00:10:26.220 --> 00:10:28.440
+web3 or blockchain Technologies and you
+
+00:10:28.440 --> 00:10:30.120
+want to become a blockchain engineer
+
+00:10:30.120 --> 00:10:31.800
+with that said I will see you in another
+
+00:10:31.800 --> 00:10:33.820
+YouTube video
+
+00:10:33.820 --> 00:10:38.000
+[Music]
+
+00:10:38.000 --> 00:10:41.060
+thank you

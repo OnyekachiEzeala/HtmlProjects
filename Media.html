@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Profile Page</a></li>
+        <li><a href="form.html">Altschool Application form</a></li>
+        <li><a href="Table.html">Table Page</a></li>
+        <li><a href="Media.html">Media Page</a></li>
+      </ul>
+    </nav>
+    <hr>
+    <caption><h1>Welcome to My Media Page!😊</h1></caption>
+    <nav>
+      <ul>
+        <li>
+          <a href="#music">My Favourite Music</a>
+        </li>
+        <li>
+          <a href="#pic">My Favourite Foods</a>
+        </li>
+        <li>
+          <a href="#video">My Favourite Video</a>
+        </li>
+        <li>
+          <a href="#embed">My Favourite Video : Embedded</a>
+        </li>
+        <li>
+          <a href="#track">Track Element</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <hr>
+
+  <main>
+    <article id="music">
+      <section>
+        <h1><em>My Favourite Music</em></h1>
+        <audio controls src="music/Asa - Jailer.mp3"></audio>
+      </section>
+    </article>
+    <hr>
+
+    <article id="pic">
+      <section>
+        <h1><em>My Favourite Food</em></h1>
+        <picture>
+          <!-- High-resolution images for large desktops -->
+          <source 
+            srcset="picture/3.jpg" 
+            media="(min-width: 1200px)">
+        
+          <!-- Laptop images -->
+          <source 
+            srcset="picture/1.jpg"
+            media="(min-width: 900px) and (max-width: 1199px)">
+        
+          <!-- Tablet images -->
+          <source 
+            srcset="picture/2.jpg" 
+            media="(min-width: 768px) and (max-width: 899px)">
+        
+          <!-- Mobile images -->
+          <source 
+            srcset="picture/4.jpg" 
+            media="(max-width: 767px)">
+        
+          <!-- Default fallback image if no conditions match -->
+          <img 
+            src="picture/1.jpg" 
+            alt="Responsive example">
+        </picture>
+      </section>
+    </article>
+    <hr>
+
+    <article id="video">
+      <section>
+        <h1><em>My Favourite Video : A brief description of Mars</em></h1>
+        <video controls src="video/Mars.mp4"></video>
+      </section>
+    </article>
+    <hr>
+
+    <article id="embed">
+      <section>
+        <h1><em>My Favourite Video Embedded</em></h1>
+        <iframe src="https://www.youtube.com/embed/0S-uDPqV06o?si=U4TV0g-8mTP_67sz" title="YouTube video player" frameborder="0">
+
+        </iframe>
+      </section>
+    </article>
+    <hr>
+
+    <article id="track">
+      <section>
+        <h1><em>Track Element</em></h1>
+        <video controls>
+          <source src="video/What to learn to become a python BE developer.mp4">
+          <track src="subtitle/[SubtitleTools.com] [English (auto-generated)] What To Learn To Become a Python Backend Developer [DownSub.com].vtt" default kind="captions" srclang="en" label="English">
+        </video>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
